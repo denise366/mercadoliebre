@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="styles-registrer.css"> <!-- Enlaza tu archivo CSS -->
+</head>
+<body>
+    <h2>Registro de Usuario</h2>
+    <form action="home.html" method="POST">
+        <label for="nombre_apellido">Nombre y Apellido:</label><br>
+        <input type="text" id="nombre_apellido" name="nombre_apellido" required><br>
+
+        <label for="nombre_usuario">Nombre de Usuario:</label><br>
+        <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+        <label for="domicilio">Domicilio:</label><br>
+        <input type="text" id="domicilio" name="domicilio" required><br>
+
+        <label for="perfil_usuario">Perfil del Usuario:</label><br>
+        <input type="radio" id="comprar" name="perfil_usuario" value="comprar" checked>
+        <label for="comprar">Comprar</label>
+        <input type="radio" id="vender" name="perfil_usuario" value="vender">
+        <label for="vender">Vender</label><br>
+
+        <label for="categorias_interes">Categorías de Interés:</label><br>
+        <input type="checkbox" id="electro" name="categorias_interes" value="electro">
+        <label for="electro">Electro</label>
+        <input type="checkbox" id="moda" name="categorias_interes" value="moda">
+        <label for="moda">Moda</label>
+        <input type="checkbox" id="hogar" name="categorias_interes" value="hogar">
+        <label for="hogar">Hogar</label>
+        <input type="checkbox" id="jugueteria" name="categorias_interes" value="jugueteria">
+        <label for="jugueteria">Juguetería</label>
+        <input type="checkbox" id="vida_sana" name="categorias_interes" value="vida_sana">
+        <label for="vida_sana">Vida Sana</label><br>
+
+        <label for="foto_usuario">Foto de Usuario:</label><br>
+        <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*" required><br>
+
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <label for="confirmar_contrasena">Confirmar Contraseña:</label><br>
+        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
